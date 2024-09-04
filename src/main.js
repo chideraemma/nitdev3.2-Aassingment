@@ -95,7 +95,7 @@ const validatePassword = (req, res, next) => {
 
 // routes and  middleware code
 app.post("/signup", validateEmail, validateUsername, validatePassword, (req, res) => {
-    console.log(re.body);
+    // console.log(re.body);
     const { username, email, password } = req.body;
 
     const id = users.length + 1;
